@@ -4,6 +4,11 @@ are you easily distracted? do you often forget what you're doing and start rando
 
 focus please allows you to set your browser's start/new tab page to show a message telling you what task you're currently (supposed to be) working on.
 
+## example
+
+![](https://user-images.githubusercontent.com/8695061/110244436-f2acdb00-7f5e-11eb-9101-78254c27ab08.mp4)
+
+
 ## how to use
 
 currently you need to know a little python to use it.
