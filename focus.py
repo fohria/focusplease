@@ -3,11 +3,14 @@ import http.server
 import socketserver
 from threading import Thread
 
-from read_write import read_content, read_task, find_task_lineindex, update_task
+from read_write import read_task, update_task
+
+
+current_task = read_task()
 
 layout = [
     [sg.Text("focus please")],
-    [sg.InputText("this will be the focus message")],
+    [sg.InputText(current_task)],
     [sg.Button("Update message")],
     [sg.Button("Start server")],
     [sg.Text("server not running", key="servermessage")],
@@ -21,6 +24,11 @@ httpd = socketserver.TCPServer(("", 1337), Handler)
 
 while True:
     event, values = window.read()
+
+    if event == "Update message":
+        new_task = values[0]
+        new_task = new_task.strip()
+        update_task(new_task)
 
     if event == "Start server":
         thread = Thread(target = httpd.serve_forever)
