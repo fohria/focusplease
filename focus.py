@@ -7,6 +7,7 @@ layout = [
     [sg.Text("focus please")],
     [sg.InputText("this will be the focus message")],
     [sg.Button("Start server")],
+    [sg.Text("server not running", key="servermessage")],
     [sg.Button("Quit")]
 ]
 
@@ -22,7 +23,7 @@ while True:
         thread = Thread(target = httpd.serve_forever)
         thread.daemon = True  # server will stop when app quits
         thread.start()
-        print("started server on 1337")
+        window['servermessage'].update("server is running")
 
     if event == "Quit" or event == sg.WIN_CLOSED:
         break
