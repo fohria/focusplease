@@ -3,9 +3,12 @@ import http.server
 import socketserver
 from threading import Thread
 
+from read_write import read_content, read_task, find_task_lineindex, update_task
+
 layout = [
     [sg.Text("focus please")],
     [sg.InputText("this will be the focus message")],
+    [sg.Button("Update message")],
     [sg.Button("Start server")],
     [sg.Text("server not running", key="servermessage")],
     [sg.Button("Quit")]
