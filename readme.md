@@ -6,8 +6,9 @@ focus please allows you to set your browser's start/new tab page to show a messa
 
 ## example
 
-![](https://user-images.githubusercontent.com/8695061/110244436-f2acdb00-7f5e-11eb-9101-78254c27ab08.mp4)
+a little video for you
 
+![focusplease](https://user-images.githubusercontent.com/8695061/110245419-520cea00-7f63-11eb-9b97-50611eb7bef7.gif)
 
 ## how to use
 
