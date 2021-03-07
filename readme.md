@@ -30,3 +30,5 @@ mamba install -c conda-forge pysimplegui
 ```bash
 python focus.py
 ```
+
+4. set your browser's startpage and/or new tab page to `http://localhost:1337'
